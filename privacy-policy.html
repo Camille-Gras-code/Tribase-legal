@@ -10,7 +10,7 @@ hr{border:0;border-top:1px solid #ddd;margin:2rem 0}
 @media (prefers-color-scheme:dark){body{background:#121212;color:#eee}th{background:#222}th,td{border-color:#444}hr{border-color:#333}}
 </style></head><body>
 <h1>Politique de confidentialité — TriBase</h1>
-<p><strong>Dernière mise à jour : 25 octobre 2026</strong></p>
+<p><strong>Dernière mise à jour : 4 novembre 2026</strong></p>
 <hr />
 <h2>1. Qui sommes-nous</h2>
 <p>TriBase est une application mobile de coaching sportif assisté par intelligence artificielle, éditée par :</p>
@@ -90,7 +90,11 @@ Contact : admin@tribase.fr</p>
 <ul>
 <li><strong>Strava</strong> (optionnel) : vos activités sportives (type, durée, distance, allure, fréquence cardiaque, puissance, dénivelé, tracé GPS le cas échéant), à des fins d'analyse de votre entraînement et de calibration de votre plan</li>
 <li><strong>Google Calendar</strong> (optionnel) : accès en écriture à votre calendrier pour y ajouter automatiquement vos séances d'entraînement</li>
+<li><strong>Garmin Connect</strong> (optionnel) : avec votre autorisation, depuis votre compte Garmin Connect : vos activités (type, date, durée, distance, dénivelé, fréquence cardiaque moyenne et maximale, nom de l'appareil) et vos données de santé (fréquence cardiaque au repos, variabilité cardiaque, sommeil, stress, VO2max). Vous choisissez les autorisations accordées sur la page Garmin, et pouvez les modifier à tout moment dans Garmin Connect. Si vous l'autorisez, TriBase peut aussi envoyer vos séances d'entraînement vers votre compte Garmin Connect, afin qu'elles apparaissent sur votre montre</li>
+<li><strong>COROS</strong> (optionnel) : avec votre autorisation, depuis votre compte COROS : vos activités (durée, fréquence cardiaque, distance), vos données de santé (fréquence cardiaque au repos, variabilité cardiaque, sommeil, stress, récupération) et votre évaluation de forme et de charge d'entraînement. TriBase peut aussi ajouter vos séances à votre calendrier COROS. TriBase ne lit pas les données de cycle menstruel</li>
 </ul>
+<p>Les données de santé issues de Garmin et de COROS (fréquence cardiaque, variabilité cardiaque, sommeil, stress, récupération, VO2max) sont des <strong>données de santé</strong> au sens du RGPD. Elles ne sont traitées qu'avec votre consentement explicite, que vous donnez dans l'application (Réglages) au moment de connecter votre compte, avant toute collecte.</p>
+<p>À partir de ces données, TriBase calcule votre charge d'entraînement (fatigue, forme) et votre état de récupération, afin d'adapter votre plan. Lorsque vous connectez Garmin, ce calcul remplace celui fondé sur vos autres sources.</p>
 <p>Vous pouvez déconnecter ces services à tout moment depuis les Réglages de l'application, ce qui interrompt immédiatement toute nouvelle collecte de données depuis ces sources.</p>
 <hr />
 <h2>3. Pourquoi nous utilisons vos données</h2>
@@ -112,7 +116,15 @@ Contact : admin@tribase.fr</p>
 <td>Exécution du contrat</td>
 </tr>
 <tr>
-<td>Adapter et faire évoluer votre plan en fonction de vos échanges avec le coach et de vos activités Strava</td>
+<td>Adapter et faire évoluer votre plan en fonction de vos échanges avec le coach et de vos activités Strava, Garmin ou COROS</td>
+<td>Exécution du contrat</td>
+</tr>
+<tr>
+<td>Traiter les données de santé issues de votre montre (Garmin, COROS) pour calculer votre charge et votre récupération</td>
+<td>Consentement explicite</td>
+</tr>
+<tr>
+<td>Envoyer vos séances vers votre compte Garmin Connect ou COROS, à votre demande</td>
 <td>Exécution du contrat</td>
 </tr>
 <tr>
@@ -143,10 +155,12 @@ Contact : admin@tribase.fr</p>
 </table>
 <hr />
 <h2>4. Le rôle de l'intelligence artificielle</h2>
-<p>Pour générer votre plan d'entraînement et faire fonctionner le coach conversationnel, nous transmettons certaines de vos données (profil sportif, objectifs, physiologie, historique d'entraînement, messages échangés) à <strong>Anthropic</strong> (Claude API), un prestataire tiers spécialisé dans l'intelligence artificielle, basé aux États-Unis.</p>
+<p>Pour générer votre plan d'entraînement et faire fonctionner le coach conversationnel, nous transmettons certaines de vos données (profil sportif, objectifs, physiologie, historique d'entraînement, messages échangés et, si vous avez connecté une montre, vos indicateurs de charge et de récupération issus de Garmin ou de COROS) à <strong>Anthropic</strong> (Claude API), un prestataire tiers spécialisé dans l'intelligence artificielle, basé aux États-Unis.</p>
 <ul>
 <li>Ce transfert hors de l'Union européenne est encadré par les clauses contractuelles types de la Commission européenne, intégrées au contrat de traitement des données d'Anthropic.</li>
 <li>Anthropic traite ces données pour fournir le service demandé par l'application, selon nos instructions.</li>
+<li>Vos données, y compris celles issues de Garmin et de COROS, ne sont jamais utilisées pour entraîner ou améliorer un modèle d'intelligence artificielle, ni vendues, ni utilisées à des fins publicitaires.</li>
+<li>Vous pouvez retirer votre consentement au traitement de ces données à tout moment en déconnectant votre montre dans Réglages : la collecte s'arrête et vos données issues de ce service sont supprimées (voir section 6).</li>
 <li>Aucune décision entièrement automatisée produisant des effets juridiques n'est prise à votre égard : le plan généré par l'IA reste un outil d'aide, que vous pouvez à tout moment modifier ou faire évoluer.</li>
 </ul>
 <hr />
@@ -159,6 +173,7 @@ Contact : admin@tribase.fr</p>
 <li><strong>RevenueCat</strong> (gestion et vérification des abonnements), qui reçoit un identifiant de compte et l'état de vos achats</li>
 <li><strong>Google Play et Apple App Store</strong> (paiement et gestion des abonnements, selon votre appareil)</li>
 <li><strong>Resend</strong> (envoi des e-mails), pour nous transmettre par e-mail les messages que vous envoyez depuis l'application</li>
+<li><strong>Garmin</strong> (Garmin Connect) et <strong>COROS</strong>, uniquement si vous activez ces connexions : TriBase reçoit leurs données avec votre autorisation et leur envoie vos séances d'entraînement à votre demande</li>
 <li><strong>Strava</strong> et <strong>Google Calendar</strong>, uniquement si vous activez ces connexions, et uniquement les données strictement nécessaires à l'intégration</li>
 <li>Toute autorité compétente, si la loi nous y oblige</li>
 </ul>
@@ -168,7 +183,10 @@ Contact : admin@tribase.fr</p>
 <li>Les données de votre compte sont conservées tant que celui-ci est actif.</li>
 <li>Si vous supprimez votre compte depuis l'application, vos données personnelles sont supprimées immédiatement de nos bases actives, y compris vos messages envoyés à l'équipe, sauf obligation légale de conservation plus longue.</li>
 <li>Certaines informations ne sont pas dans nos bases et suivent les règles de leurs responsables : les e-mails de notification déjà reçus dans notre messagerie, ainsi que les données d'achat conservées par Google, Apple et RevenueCat. Supprimer votre compte n'annule pas votre abonnement : pensez à le résilier dans les réglages de Google Play ou de l'App Store.</li>
-<li>Les jetons d'accès Strava et Google Calendar sont supprimés immédiatement lors de la déconnexion du service concerné.</li>
+<li>Les jetons d'accès Strava, Google Calendar, Garmin et COROS sont supprimés immédiatement lors de la déconnexion du service concerné.</li>
+<li>Lorsque vous déconnectez Garmin, ou si Garmin nous informe que vous avez retiré l'accès ou supprimé votre compte, les données reçues de Garmin (activités, données de santé) sont supprimées de nos bases. Les notifications brutes reçues de Garmin sont en outre effacées automatiquement au bout de 7 jours.</li>
+<li>Lorsque vous déconnectez COROS, votre connexion et les données qui en sont issues sont supprimées de nos bases.</li>
+<li>Les séances déjà envoyées vers votre montre ou votre calendrier (Garmin Connect, COROS) restent chez ces services : vous pouvez les supprimer depuis leurs applications.</li>
 </ul>
 <hr />
 <h2>7. Vos droits</h2>
@@ -180,7 +198,7 @@ Contact : admin@tribase.fr</p>
 <li><strong>Droit à la limitation du traitement</strong></li>
 <li><strong>Droit à la portabilité</strong> — recevoir vos données dans un format structuré et couramment utilisé</li>
 <li><strong>Droit d'opposition</strong></li>
-<li><strong>Droit de retirer votre consentement</strong> à tout moment, notamment concernant le traitement de vos données de santé, sans que cela remette en cause la licéité des traitements effectués avant ce retrait</li>
+<li><strong>Droit de retirer votre consentement</strong> à tout moment, notamment concernant le traitement de vos données de santé (y compris celles issues de Garmin ou de COROS, en déconnectant le service dans Réglages), sans que cela remette en cause la licéité des traitements effectués avant ce retrait</li>
 </ul>
 <p>Pour exercer ces droits, contactez-nous à admin@tribase.fr. Vous disposez également du droit d'introduire une réclamation auprès de la CNIL (www.cnil.fr) si vous estimez que vos droits ne sont pas respectés.</p>
 <p>Vous pouvez supprimer votre compte directement depuis l'application (Réglages → Compte), ou en nous contactant.</p>
